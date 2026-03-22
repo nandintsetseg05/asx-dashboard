@@ -1,16 +1,76 @@
-# React + Vite
+# ASX Portfolio Risk & Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive Bloomberg-style analytics terminal for ASX investors.
+Build a custom portfolio and instantly generate risk metrics, 
+stress-test scenarios, and performance attribution reports.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📊 What It Does
 
-## React Compiler
+- Ingests **live ASX data** via Yahoo Finance API (yfinance)
+- Calculates **Sharpe Ratio**, **Value at Risk (VaR)**, and **sector allocation**
+- Runs **portfolio stress-tests** across 3 market scenarios
+- Generates **exportable PDF reports** aligned to CFA-style performance attribution
+- **Automated weekly refresh pipeline** — zero manual reporting time
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Layer | Technology |
+|-------|------------|
+| Data ingestion | Python, yfinance |
+| Data processing | pandas, numpy |
+| Visualisation | Power BI |
+| Automation | Python scheduled tasks |
+| Export | PDF generation |
+
+---
+
+## 📸 Screenshots
+
+<!-- Add screenshots here -->
+
+---
+
+## 🚀 How to Run
+```bash
+# Clone the repo
+git clone https://github.com/nandintsetseg05/asx-dashboard
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run data pipeline
+python data_pipeline.py
+
+# Open dashboard
+# Import asx_dashboard.pbix into Power BI Desktop
+```
+
+---
+
+## 📈 Key Features
+
+**Risk Metrics**
+- Sharpe Ratio (risk-adjusted return)
+- Value at Risk (VaR) at 95% confidence
+- Max drawdown analysis
+
+**Portfolio Analysis**
+- Sector allocation breakdown
+- Correlation matrix
+- Benchmark comparison
+
+**Automation**
+- Scheduled weekly data refresh
+- Auto-generated PDF summary reports
+
+---
+
+## 👤 Author
+
+Nana Nandintsetseg Bayarsaikhan  
+[nana-nandintsetseg.com](https://www.nana-nandintsetseg.com) 
+| [LinkedIn](https://www.linkedin.com/in/nana-nandintsetseg/)
